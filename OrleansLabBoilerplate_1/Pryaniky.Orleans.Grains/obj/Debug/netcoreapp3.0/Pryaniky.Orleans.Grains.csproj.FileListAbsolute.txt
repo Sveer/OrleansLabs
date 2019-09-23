@@ -1,0 +1,13 @@
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\bin\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.deps.json
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\bin\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\obj\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.csprojAssemblyReference.cache
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\obj\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.AssemblyInfoInputs.cache
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\obj\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.AssemblyInfo.cs
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\obj\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.csproj.OrleansCodeGenInputs.cache
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\bin\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.pdb
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\bin\Debug\netcoreapp3.0\Pryaniky.Orleans.GrainInterfaces.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\bin\Debug\netcoreapp3.0\Pryaniky.Orleans.GrainInterfaces.pdb
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\obj\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.orleans.g.cs
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\obj\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.csproj.CopyComplete
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\obj\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.Grains\obj\Debug\netcoreapp3.0\Pryaniky.Orleans.Grains.pdb

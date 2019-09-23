@@ -1,0 +1,16 @@
+C:\2\Orleans2\orleans\Samples\OneBoxDeployment\src\OneBoxDeployment.OrleansUtilities\bin\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.deps.json
+C:\2\Orleans2\orleans\Samples\OneBoxDeployment\src\OneBoxDeployment.OrleansUtilities\bin\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.dll
+C:\2\Orleans2\orleans\Samples\OneBoxDeployment\src\OneBoxDeployment.OrleansUtilities\bin\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.pdb
+C:\2\Orleans2\orleans\Samples\OneBoxDeployment\src\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.csprojAssemblyReference.cache
+C:\2\Orleans2\orleans\Samples\OneBoxDeployment\src\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.AssemblyInfoInputs.cache
+C:\2\Orleans2\orleans\Samples\OneBoxDeployment\src\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.AssemblyInfo.cs
+C:\2\Orleans2\orleans\Samples\OneBoxDeployment\src\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.dll
+C:\2\Orleans2\orleans\Samples\OneBoxDeployment\src\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.pdb
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\OneBoxDeployment.OrleansUtilities\bin\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.deps.json
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\OneBoxDeployment.OrleansUtilities\bin\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\OneBoxDeployment.OrleansUtilities\bin\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.pdb
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.csprojAssemblyReference.cache
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.AssemblyInfoInputs.cache
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.AssemblyInfo.cs
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\OneBoxDeployment.OrleansUtilities\obj\Debug\netstandard2.0\OneBoxDeployment.OrleansUtilities.pdb

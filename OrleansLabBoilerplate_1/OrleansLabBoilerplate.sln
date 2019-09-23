@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29311.281
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5585F51-D52C-46F3-BE2F-8BE7DF819223}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pryaniky.OrleansHost", "Pryaniky.OrleansHost\Pryaniky.OrleansHost.csproj", "{B905FE2D-2F94-4D39-A395-BBC8A68ECC97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pryaniky.Orleans.Grains", "Pryaniky.Orleans.Grains\Pryaniky.Orleans.Grains.csproj", "{FC3232EB-F8AB-406B-BF5B-A122FAB50842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pryaniky.Orleans.GrainInterfaces", "Pryaniky.Orleans.GrainInterfaces\Pryaniky.Orleans.GrainInterfaces.csproj", "{B7BE8648-888D-47C2-8821-34318AFAE1B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBoxDeployment.OrleansUtilities", "OneBoxDeployment.OrleansUtilities\OneBoxDeployment.OrleansUtilities.csproj", "{2C023650-D517-416E-8935-645E9685CA2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B905FE2D-2F94-4D39-A395-BBC8A68ECC97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B905FE2D-2F94-4D39-A395-BBC8A68ECC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B905FE2D-2F94-4D39-A395-BBC8A68ECC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B905FE2D-2F94-4D39-A395-BBC8A68ECC97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3232EB-F8AB-406B-BF5B-A122FAB50842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3232EB-F8AB-406B-BF5B-A122FAB50842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3232EB-F8AB-406B-BF5B-A122FAB50842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3232EB-F8AB-406B-BF5B-A122FAB50842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7BE8648-888D-47C2-8821-34318AFAE1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7BE8648-888D-47C2-8821-34318AFAE1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7BE8648-888D-47C2-8821-34318AFAE1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7BE8648-888D-47C2-8821-34318AFAE1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C023650-D517-416E-8935-645E9685CA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C023650-D517-416E-8935-645E9685CA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C023650-D517-416E-8935-645E9685CA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C023650-D517-416E-8935-645E9685CA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D08A0EB3-2E56-4B0D-B325-70178CBA8EEE}
+	EndGlobalSection
+EndGlobal
