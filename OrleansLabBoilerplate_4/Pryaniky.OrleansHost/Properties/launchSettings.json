@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Pryaniky.OrleansHost": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "dev"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\bin\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.deps.json
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\bin\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.AssemblyInfoInputs.cache
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.AssemblyInfo.cs
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\bin\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.pdb
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.csproj.OrleansCodeGenInputs.cache
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.orleans.g.cs
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.pdb
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.csprojAssemblyReference.cache
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\bin\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\bin\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.pdb
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.csproj.CopyComplete

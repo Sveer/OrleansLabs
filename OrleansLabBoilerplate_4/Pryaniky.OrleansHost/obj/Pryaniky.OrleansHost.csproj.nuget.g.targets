@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.orleans.reminders.adonet\3.0.0-beta1\build\netstandard2.0\Microsoft.Orleans.Reminders.AdoNet.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.orleans.reminders.adonet\3.0.0-beta1\build\netstandard2.0\Microsoft.Orleans.Reminders.AdoNet.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.orleans.persistence.adonet\3.0.0-beta1\build\netstandard2.0\Microsoft.Orleans.Persistence.AdoNet.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.orleans.persistence.adonet\3.0.0-beta1\build\netstandard2.0\Microsoft.Orleans.Persistence.AdoNet.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.orleans.clustering.adonet\3.0.0-beta1\build\netstandard2.0\Microsoft.Orleans.Clustering.AdoNet.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.orleans.clustering.adonet\3.0.0-beta1\build\netstandard2.0\Microsoft.Orleans.Clustering.AdoNet.targets')" />
+  </ImportGroup>
+</Project>

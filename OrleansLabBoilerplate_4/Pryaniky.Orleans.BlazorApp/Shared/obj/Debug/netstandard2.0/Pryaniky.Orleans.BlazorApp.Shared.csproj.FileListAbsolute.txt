@@ -1,0 +1,8 @@
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.BlazorApp\Shared\bin\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.deps.json
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.BlazorApp\Shared\bin\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.BlazorApp\Shared\bin\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.pdb
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.BlazorApp\Shared\obj\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.AssemblyInfoInputs.cache
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.BlazorApp\Shared\obj\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.AssemblyInfo.cs
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.BlazorApp\Shared\obj\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.dll
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.BlazorApp\Shared\obj\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.pdb
+C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.BlazorApp\Shared\obj\Debug\netstandard2.0\Pryaniky.Orleans.BlazorApp.Shared.csprojAssemblyReference.cache
