@@ -6,6 +6,8 @@
 3. Установить шаблоны Blazor для Visual Studio 2019:
 dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview9.19457.4
 
+4. http://github.com/sveer/
+
 
 
 ## Структура Boilerplate'a:
@@ -379,12 +381,12 @@ public async Task<bool> LockUser()
 
 Для его подключения достаточно поставить пакет
 ```
-Microsoft.Orleans.Dashboard
+OrleansDashboard
 ```
 
 И далее в Startup.cs добавить его запуск:
 ```
-
+ .UseDashboard(options => { })
 ```
 
 
@@ -520,17 +522,23 @@ public class WeatherForecastController : ControllerBase
 
 Давайте добавим небольшой TODO-лист в наше приложение Blazor, для управления этим списокм.
 
-Для начала созданим модели данных для грейна Задача (ToDoItem и списка ToDoList). ДЖоабювим их в сборку GrainInterfaces
+Для начала созданим модели данных для грейна Задача (ToDoItem и списка ToDoList). Добавим их в сборку GrainInterfaces в подкаталог Models
 
 ```
 using Orleans.Concurrency;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Sample.Grains.Models
+namespace Pryaniky.Orleans.GrainInterfaces.Models
 {
-    [Immutable]
+    [Immutable] //Позволяет фреймворку оптимиизровать работу с обехктом. Ex: не делать DeepCopy
     public class TodoItem : IEquatable<TodoItem>
     {
+        public TodoItem()
+        {
+
+        }
         public TodoItem(Guid key, string title, bool isDone, Guid ownerKey)
             : this(key, title, isDone, ownerKey, DateTime.UtcNow)
         {
@@ -567,7 +575,24 @@ namespace Sample.Grains.Models
         public TodoItem WithTitle(string title) =>
             new TodoItem(Key, title, IsDone, OwnerKey, DateTime.UtcNow);
     }
+    
+     [Immutable]
+    ///Класс для отправки данных через стримы(очереди)
+    public class TodoNotification
+    {
+        public TodoNotification(Guid itemKey, TodoItem item)
+        {
+            ItemKey = itemKey;
+            Item = item;
+        }
+
+        public Guid ItemKey { get; }
+        public TodoItem Item { get; }
+    }
+    
+    
 }
+
 ```
 
 Далее добавим грейн-регистр
@@ -720,3 +745,20 @@ public class TodoManagerGrain : Grain, ITodoManagerGrain
         }
     }
 ```
+
+
+Теперь добавляем вьюхи для ToDo. В NavMenu:
+```
+<li class="nav-item px-3">
+            <NavLink class="nav-link" href="todo">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
+            </NavLink>
+        </li>
+        ```
+        
+        И верстку Todo.razor:
+        ```
+        
+        ```
+        
+   
