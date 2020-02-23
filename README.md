@@ -1,7 +1,7 @@
 #Lab1. Практическая работа по основам Microsopft Orleans
 
 Что нужно для подготовки:
-1. Visual Studio 2019 Preview 4 - бесплатнгый варинат (https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview)
+1. Visual Studio 2019 Preview 4 - бесплатный вариант (https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview)
 2. .NET Core 3.0 RC1 (https://dotnet.microsoft.com/download/dotnet-core/3.0)
 3. Установить шаблоны Blazor для Visual Studio 2019:
 dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview9.19457.4
@@ -11,7 +11,7 @@ dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview9.19457.4
 
 
 ## Структура Boilerplate'a:
- - OneBoxDeployment.OrleansUtilities - проект из примеров Orleans - содердит несколько классов для чтения конфигурации Silo из json-файла конфигурации
+ - OneBoxDeployment.OrleansUtilities - проект из примеров Orleans - содержит несколько классов для чтения конфигурации Silo из json-файла конфигурации
  - Pryaniky.OrleansHost - Консольный проект с запуском Silo
  - Pryaniky.Orleans.GrainInterfaces - пустой проект для интерфейсов грейнов
  - Pryaniky.Orleans.Grains  - пустой проект для размещения грейнов
@@ -33,17 +33,17 @@ public static ISiloHost BuildOrleansHost(string[] args)
 }
 ```
 
-Будем брать нарстройки из файла конфигурации
-Для этого полдключим проект OneBoxDeployment.OrleansUtilities из классного примера использования Orleans (Только обновим до .NET Core 3.0). В класс деериализуем основные анстройки Orleans:
-* ClusterOptions - Настройки кластера (идентифкаторы клдастера и сервиса)
-* EndpointOptions - сетевые анстройки
-* ConnectionConfig - строка соединения к БД для хранения инфомрации о чденстве silo в кластере
+Будем брать настройки из файла конфигурации
+Для этого полдключим проект OneBoxDeployment.OrleansUtilities из классного примера использования Orleans (Только обновим до .NET Core 3.0). В класс десериализуем основные настройки Orleans:
+* ClusterOptions - Настройки кластера (идентифкаторы кластера и сервиса)
+* EndpointOptions - сетевые настройки
+* ConnectionConfig - строка соединения к БД для хранения информации о членстве silo в кластере
 * StorageConfigs - строки соединения для Storage-провайдеров
-* ReminderConfigs - строки соледиенния для сервиса планировщика заданий
+* ReminderConfigs - строки соединения для сервиса планировщика заданий
 
-``` csharp
-  //Стандартный сопсоб считывать настройки из разных файлов конфигшуроации
-            //в зависимости от переменной окружания (Development, production и пр.)
+```csharp
+            //Стандартный способ считывать настройки из разных файлов конфигурации
+            //в зависимости от переменной окружения (Development, production и пр.)
             var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
             var configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.orleanshost.json", optional: true, reloadOnChange: true)
@@ -56,13 +56,14 @@ public static ISiloHost BuildOrleansHost(string[] args)
 
 ```
 
-Теперь необхолдимол сконфигурировать кластер, с помощью SiloHostBuilder.
+Теперь необхолдимо сконфигурировать кластер, с помощью SiloHostBuilder.
 
-Основное что нужно сделать - задать Идентифкаторы кластера и сервиса, задать сетевые настройки и строки соединения с хранилищами.
+Основное что нужно сделать - задать идентифкаторы кластера и сервиса, задать сетевые настройки и строки соединения с хранилищами.
 В самом простом варианте можно создать локальный кластер:
 
-```
-Пример простой настройки Orleans (в практической работе не используется):
+
+
+```csharp Пример простой настройки Orleans (в практической работе не используется):
 .UseOrleans(builder =>
 {
     builder.UseLocalhostClustering();
@@ -70,18 +71,17 @@ public static ISiloHost BuildOrleansHost(string[] args)
     builder.AddMemoryGrainStorage("PubSubStore");
 })
 ```
-И добавить ссылку на сборки с нашими Грейнами - виртуальными акторами с основной бизнес-логикой приложения:
-```
-Пример регистарции Грейнов (в практической работе не используется):
+И добавить ссылку на сборки с нашими грейнами - виртуальными акторами с основной бизнес-логикой приложения:
+```csharp Пример регистрации грейнов (в практической работе не используется):
  builder.ConfigureApplicationParts(manager =>
     {
         manager.AddApplicationPart(typeof(HzGrain).Assembly).WithReferences();
     });
 ```
 
-Но мы сделаем несколько более сложуню настройку.
-Для начала мы будем исполдьзовать Azure SQL или локальный SQL Server в качестве основных хранилищ для Orleans. Также добавим журналирование и сетевые настройки из файла конфигурации:
-```
+Но мы сделаем несколько более сложную настройку.
+Для начала, мы будем использовать Azure SQL или локальный SQL Server в качестве основных хранилищ для Orleans. Также добавим журналирование и сетевые настройки из файла конфигурации:
+```csharp
   var siloBuilder = new SiloHostBuilder()
                 .ConfigureLogging((hostingContext, logging) =>
                 {
@@ -126,18 +126,18 @@ public static ISiloHost BuildOrleansHost(string[] args)
                     options.ConnectionString = clusterConfig.StorageConfigs[0].ConnectionString;
                 })
 
-                //Тут добавялем источники загрузки наших Grain'ов. Не заюываем подключить пространство имен "Orleans" :)
+                //Тут добавляем источники загрузки наших Grain'ов. Не заюываем подключить пространство имен "Orleans" :)
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(UserGrain).Assembly).WithReferences());
 ```
 
 И остается собрать и вернуть настройки Silo Host из метода BuildOrleansHost
-```
+```csharp
  return siloBuilder.Build();
 ```
 
 ### А теперь попробуем со всем этим взлететь
 Для запуска SiloHost, меняем Main на асинхронный вызов и получаем:
-```
+```csharp
  static async Task Main(string[] args)
 {
     var siloHost = BuildOrleansHost();
@@ -152,13 +152,13 @@ public static ISiloHost BuildOrleansHost(string[] args)
 
 ### Создаем грейны с простой логикой
 Для создания грейнов достаточно сделать две вещи:
-- Создать интерфес для грейна с понятным API
-- Создать сам грейн, наследуя от класс Grain, и реализующий наш интерфес с блекджеком и методами.ъ
+- Создать интерфейс для грейна с понятным API
+- Создать сам грейн, наследуя от класса Grain, с реализацией нашего интерфейса с блекджеком и методами.
  
-Интерфес реализуем в проекта Pryaniky.Orleans.GrainInterfaces
-Мы потом будем подключать это проект к клиентам Orleans для вызова методов
+Интерфейс реализуем в проекта Pryaniky.Orleans.GrainInterfaces
+Мы потом будем подключать этот проект к клиентам Orleans для вызова методов
 
-```
+```csharp
 public interface IUserGrain : IGrainWithGuidKey
 {
     Task<bool> Avadekedavra();  // Удаляем пользоваателя
@@ -166,9 +166,9 @@ public interface IUserGrain : IGrainWithGuidKey
 }
 ```
 
-Далее релизуем сам грейн, вместе со структурой хранения состояния грейна. Хранить будем сстояние грейна - удален он или нет
+Далее релизуем сам грейн, вместе со структурой хранения состояния грейна. Хранить будем состояние грейна - удален он или нет
 
-```
+```csharp
   [StorageProvider(ProviderName = "TestStorage")]
     ///State - хранит удален ли пользователь или нет
     public class UserGrain : Grain<bool>, IUserGrain
@@ -204,10 +204,10 @@ public interface IUserGrain : IGrainWithGuidKey
     }
 ```
 
-Тепреь долабвим сервисные сообщения, отобржемые при вызове грейнов.
-Для этого через DI добавим в лксс грейна логгер:
+Теперь добавим сервисные сообщения, отображаемые при вызове грейнов.
+Для этого через DI добавим в класс грейна логгер:
 
-```
+```csharp
         private readonly ILogger<UserGrain> _logger;
         
         public UserGrain(ILogger<UserGrain> logger)
@@ -217,8 +217,8 @@ public interface IUserGrain : IGrainWithGuidKey
 
 ```
 
-Тепеь  можно писть в журнал:
-```
+Тепеь  можно писать в журнал:
+```csharp
 
 public async Task<bool> SendMessage(string msg)
 {
@@ -232,14 +232,14 @@ public async Task<bool> SendMessage(string msg)
 
 ### Создаем простого клиента для грейна
 
-Для создания простого келиента создаем проект ASP.NET CORE Web Application -> API (без HTTPS, для простоты)
+Для создания простого клиента создаем проект ASP.NET CORE Web Application -> API (без HTTPS, для простоты)
 
-Подключать клиента мы модулем через DI. Для этого мы зарегистриуем сервис IHostedService в asp.net core
-IHostedService позвоялет в .NET создвавать фотоные задачи.
-Создние клиента очень похоже на создание Silo, поэтому сделаем это за 1 проход:
+Подключать клиента мы будем модулем через DI. Для этого мы зарегистриуем сервис IHostedService в asp.net core
+IHostedService позволяет в .NET создававать фоновые задачи.
+Создание клиента очень похоже на создание Silo, поэтому сделаем это за 1 проход:
 
 
-```
+```csharp
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -325,9 +325,9 @@ public static class ClusterServiceBuilderExtensions{
 
 ```
 
-Далее для красоты и простоты сделаем сттический класс ClusterServiceBuilderExtensions с методом-расширением регистрации IOrleansClient. После этого его можно будет легко использовать в контроллерах:
+Далее для красоты и простоты сделаем статический класс ClusterServiceBuilderExtensions с методом-расширением регистрации IOrleansClient. После этого его можно будет легко использовать в контроллерах:
 
-```
+```csharp
 public static class ClusterServiceBuilderExtensions
     {
         public static IServiceCollection AddClusterService(this IServiceCollection services)
@@ -340,16 +340,16 @@ public static class ClusterServiceBuilderExtensions
     }
 ```
 
-И, собственно, добаялем клиента в метод ConfigureServices. 
-Пред вызовом AddClusterService читаем настройки из файла. => Нам надо перенести настройки из сервергой части в клиентскую, в файл appSettins.json
+И, собственно, добавляем клиента в метод ConfigureServices. 
+Перед вызовом AddClusterService читаем настройки из файла. => Нам надо перенести настройки из серверной части в клиентскую, в файл appSettins.json
 
-```
+```csharp
   services.Configure<ClusterConfig>(Configuration.GetSection("ClusterConfig"));
             services.AddClusterService();
 ```
 
-Остается попроболвать обратиться к грейну. Для этого добавим в контроллер WeatherForecastController (Создан в качестве примера) IOrleansCLient:
-```
+Остается попробовать обратиться к грейну. Для этого добавим в контроллер WeatherForecastController (Создан в качестве примера) IOrleansCLient:
+```csharp
   private IClusterClient _client;
 
 public WeatherForecastController(ILogger<WeatherForecastController> logger, IClusterClient client)
@@ -360,7 +360,7 @@ public WeatherForecastController(ILogger<WeatherForecastController> logger, IClu
 }
 ```
 И метод вызова грейна:
-```
+```csharp
 [HttpGet]
 [Route("LockUser")]
 public async Task<bool> LockUser()
@@ -369,23 +369,23 @@ public async Task<bool> LockUser()
     return await testStateGrain.Avadekedavra();
 }
 ```
-Здесь мы получем пользователя по его ID (Берем Guid.Empty) и вызываем методы как у обычного локального обеъкта.
+Здесь мы получаем пользователя по его ID (Берем Guid.Empty) и вызываем методы как у обычного локального объекта.
 
-Для теста - запускаем об проекта (Multi) - OrleansHost и Pryaniky.Orleans.API и пробуем открыть URL: /api/WeatherForecast/LockUser
+Для теста - запускаем оба проекта (Multi) - OrleansHost и Pryaniky.Orleans.API и пробуем открыть URL: /api/WeatherForecast/LockUser
 
 
-##Lab2. Подключаекм Orleans DashBoard.
-у Orleans есть готовый инстурмент дял мониторинга работоспосомбности.
-Для сбора статитситки используются пакет Orleans.Telementy
-А вот для визаулизации есть проект Orleans.Dashboard.
+##Lab2. Подключаем Orleans DashBoard.
+у Orleans есть готовый инструмент для мониторинга работоспособности.
+Для сбора статиститки используется пакет Orleans.Telemetry.
+А для визуализации есть проект Orleans.Dashboard.
 
 Для его подключения достаточно поставить пакет
-```
+```csharp
 OrleansDashboard
 ```
 
 И далее в Startup.cs добавить его запуск:
-```
+```csharp
  .UseDashboard(options => { })
 ```
 
@@ -394,13 +394,13 @@ OrleansDashboard
 
 Мы смогли запустить простой проект на Orleans, теперь попробуем расширить функционал.
 В качестве клиента будем использовать новый Framework - Microsoft Blazor.
-Он позвоялет создавтаь браузерные приложениея на чистом C#, в виде Клиент-Серверного решения (через SignalR) или размещением клиентской части в WebAssembly.
+Он позволяет создавать браузерные приложения на чистом C#, в виде Клиент-Серверного решения (через SignalR) или размещением клиентской части в WebAssembly.
 
-Мы попробвем второй вариант.
+Мы попробуем второй вариант.
 
-Итака. Добавляем в проект приложение Blazor. 
+Итак. Добавляем в проект приложение Blazor. 
 Если в студии у Вас нет шаблона Blazor, то необходимо выполнить команду:
-```
+```csharp
 dotnet add template blazor
 ```
 
@@ -409,9 +409,9 @@ dotnet add template blazor
 * Pryaniky.Orleans.BlazorApp.Server - Серверный BackEnd
 * Pryaniky.Orleans.BlazorApp.Client - приложение WebAssembly
 
-Pryaniky.Orleans.BlazorApp.Server - практически полный аналог нашего тестового ASP.NET Core приложения, нам достаточно скопировать папку Services с файлом регистрации клиента Orleans + файл нстроек.
-В Startup.cs Добаяляем
-```
+Pryaniky.Orleans.BlazorApp.Server - практически полный аналог нашего тестового ASP.NET Core приложения, нам достаточно скопировать папку Services с файлом регистрации клиента Orleans + файл настроек.
+В Startup.cs добавляем
+```csharp
    public Startup(IConfiguration configuration)
     {
         Configuration = configuration;
@@ -422,29 +422,29 @@ Pryaniky.Orleans.BlazorApp.Server - практически полный анал
 ```
 и в ConfigureServices
 
-```
+```csharp
  services.Configure<ClusterConfig>(Configuration.GetSection("ClusterConfig"));
 
 services.AddClusterService();
            
 ```
-Ну и доавбялем необходиммые пакеты (студия сама предложит):
+Ну и добавляем необходиммые пакеты (студия сама предложит):
 * Microsoft.Orleans.Clustering.AdoNet
 * Microsoft.Orleans.Core
 * 
-+ на будущее еще Swagger, чтобы получить симпотичную документацию к нашему API:
++ на будущее еще Swagger, чтобы получить симпатичную документацию к нашему API:
 * Swashbuckle.AspNetCore.Swagger
 * Swashbuckle.AspNetCore.SwaggerGen
 * Swashbuckle.AspNetCore.SwaggerUI
-P.S> Общий пакет Swashbuckle.AspNetCore.SwaggerUI пока не совместим с ASP.NET CORE 3.0 RC1.
+P.S. Общий пакет Swashbuckle.AspNetCore.SwaggerUI пока не совместим с ASP.NET CORE 3.0 RC1.
 
-Пример на Blazor позвоялет запустить простое приложение, в котором есть функционал отображение прогноза погоды и счетчикаю
-Давайте перенесем прогноз погоды в Orleans, а также сделакем его реальным :)
+Пример на Blazor позволяет запустить простое приложение, в котором есть функционал отображения прогноза погоды и счетчика.
+Давайте перенесем прогноз погоды в Orleans, а также сделаем его реальным :)
 
-Для начала видим что прогноз погоды храниться в DTO-шке WeatherForecast.
-Добавялем интерфейс грейна, который будет  это обсулуживать в сборке Pryanky.Orleans.GrainInterfaces:
+Для начала видим что прогноз погоды хранится в DTO-шке WeatherForecast.
+Добавляем интерфейс грейна, который будет  это обслуживать в сборке Pryanky.Orleans.GrainInterfaces:
 
-```
+```csharp
 public interface IWeatherGrain : IGrainWithGuidKey
 {
     Task<IEnumerable<WeatherForecast>> GetForecastAsync();
@@ -452,7 +452,7 @@ public interface IWeatherGrain : IGrainWithGuidKey
 ```
 
 Далее добавим в класс WeatherForecast конструктор, для простоты инициализации:
-```
+```csharp
  public WeatherForecast(DateTime date, int temperatureC, string summary)
 {
     Date = date;
@@ -462,7 +462,7 @@ public interface IWeatherGrain : IGrainWithGuidKey
 ```
 
 И создаем Grain:
-```
+```csharp
  public class WeatherGrain : Grain, IWeatherGrain
 {
     public async Task<IEnumerable<WeatherForecast>> GetForecastAsync()
@@ -480,7 +480,7 @@ public interface IWeatherGrain : IGrainWithGuidKey
 ```
 
 Остается его вызвать. Для этого меняем контроллер WeatherForecastController:
-```
+```csharp
 public class WeatherForecastController : ControllerBase
     {
         private readonly ILogger<WeatherForecastController> logger;
@@ -510,21 +510,22 @@ public class WeatherForecastController : ControllerBase
     }
 ```
 
-Не забываем  длдобавить пакет Syste,Data.SqlClient, без которого мы не сомжем пождключиться к Silo.
+Не забываем  добавить пакет System.Data.SqlClient, без которого мы не сможем подключиться к Silo.
 Запускаем, и переходим на вкладку прогноза погоды. Получаем результат :)
 
 
 ## Lab4. Структуры грейнов - регистры и элементы
 
-В Orleans довольно много механизмов для построения и оптимизации рабьоты со структурами данных.
-Наиболее частов используется паттерн Register.
-В нем мы создаем "Менеджер" для грейнов, управляющий списоком элементов. А свами элементы находятся в отдельных греейнах-элементах. Это позволяет гибко работатьс  памятью и довольно просто управляться с большим количетсвом объектов.
+В Orleans довольно много механизмов для построения и оптимизации работы со структурами данных.
+Наиболее часто используется паттерн Register.
+В нем мы создаем "Менеджер" для грейнов, управляющий списком элементов. А сами элементы находятся в отдельных греейнах-элементах. 
+Это позволяет гибко работать с памятью и довольно просто управляться с большим количеством объектов.
 
-Давайте добавим небольшой TODO-лист в наше приложение Blazor, для управления этим списокм.
+Давайте добавим небольшой TODO-лист в наше приложение Blazor, для управления этим списком.
 
-Для начала созданим модели данных для грейна Задача (ToDoItem и списка ToDoList). Добавим их в сборку GrainInterfaces в подкаталог Models
+Для начала создадим модели данных для грейна Задача (ToDoItem и списка ToDoList). Добавим их в сборку GrainInterfaces в подкаталог Models
 
-```
+```csharp
 using Orleans.Concurrency;
 using System;
 using System.Collections.Generic;
@@ -532,7 +533,7 @@ using System.Text;
 
 namespace Pryaniky.Orleans.GrainInterfaces.Models
 {
-    [Immutable] //Позволяет фреймворку оптимиизровать работу с обехктом. Ex: не делать DeepCopy
+    [Immutable] //Позволяет фреймворку оптимизировать работу с объектом. Ex: не делать DeepCopy
     public class TodoItem : IEquatable<TodoItem>
     {
         public TodoItem()
@@ -596,7 +597,7 @@ namespace Pryaniky.Orleans.GrainInterfaces.Models
 ```
 
 Далее добавим грейн-регистр
-```
+```csharp
   public interface ITodoManagerGrain : IGrainWithGuidKey
     {
         Task RegisterAsync(Guid itemKey);
@@ -606,7 +607,7 @@ namespace Pryaniky.Orleans.GrainInterfaces.Models
     }
 ```
 
-```
+```csharp
  public interface ITodoGrain : IGrainWithGuidKey
     {
         Task SetAsync(TodoItem item);
@@ -620,7 +621,7 @@ namespace Pryaniky.Orleans.GrainInterfaces.Models
 
 И сами грейны:
 
-```
+```csharp
  public class TodoGrain : Grain, ITodoGrain
     {
         private readonly ILogger<TodoGrain> logger;
@@ -702,7 +703,7 @@ namespace Pryaniky.Orleans.GrainInterfaces.Models
 ```
 
 
-```
+```csharp
 public class TodoManagerGrain : Grain, ITodoManagerGrain
     {
         private readonly IPersistentState<State> state;
@@ -748,17 +749,17 @@ public class TodoManagerGrain : Grain, ITodoManagerGrain
 
 
 Теперь добавляем вьюхи для ToDo. В NavMenu:
-```
-<li class="nav-item px-3">
+```csharp
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="todo">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
             </NavLink>
         </li>
-        ```
+```
         
-        И верстку Todo.razor:
-        ```
+И верстку Todo.razor:
+```
         
-        ```
+```
         
    
