@@ -126,7 +126,7 @@ public static ISiloHost BuildOrleansHost(string[] args)
                     options.ConnectionString = clusterConfig.StorageConfigs[0].ConnectionString;
                 })
 
-                //Тут добавляем источники загрузки наших Grain'ов. Не заюываем подключить пространство имен "Orleans" :)
+                //Тут добавляем источники загрузки наших Grain'ов. Не забываем подключить пространство имен "Orleans" :)
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(UserGrain).Assembly).WithReferences());
 ```
 
@@ -260,7 +260,7 @@ using System.Threading.Tasks;
 namespace Pryaniky.Orleans.API.Services
 {
     /// <summary>
-    /// Испольузем IHostedSerivce - инстурмент дял запуска и DI 
+    /// Испольузем IHostedSerivce - инструмент для запуска и DI 
     /// Сервисов в asp.net core 2.2+
     /// </summary>
     public class ClusterService : IHostedService
@@ -288,7 +288,7 @@ namespace Pryaniky.Orleans.API.Services
                    })
                   .Configure<EndpointOptions>(options =>
                   {
-                      //Если IP кластера не задан, то исполььузем LoopBack
+                      //Если IP кластера не задан, то используем LoopBack
                       options.AdvertisedIPAddress = clusterConfig.EndPointOptions.AdvertisedIPAddress ?? IPAddress.Loopback;
                       options.GatewayListeningEndpoint = clusterConfig.EndPointOptions.GatewayListeningEndpoint;
                       options.GatewayPort = clusterConfig.EndPointOptions.GatewayPort;
@@ -318,7 +318,7 @@ namespace Pryaniky.Orleans.API.Services
         public IClusterClient Client { get; }
     }
 public static class ClusterServiceBuilderExtensions{
-    //TODO: Зарегистриуем в ASP.NET CORE Клиент сервиса...
+    //TODO: Зарегистрируем в ASP.NET CORE Клиент сервиса...
 }
     
 }
@@ -518,7 +518,7 @@ public class WeatherForecastController : ControllerBase
 
 В Orleans довольно много механизмов для построения и оптимизации работы со структурами данных.
 Наиболее часто используется паттерн Register.
-В нем мы создаем "Менеджер" для грейнов, управляющий списком элементов. А сами элементы находятся в отдельных греейнах-элементах. 
+В нем мы создаем "Менеджер" для грейнов, управляющий списком элементов. А сами элементы находятся в отдельных грейнах-элементах. 
 Это позволяет гибко работать с памятью и довольно просто управляться с большим количеством объектов.
 
 Давайте добавим небольшой TODO-лист в наше приложение Blazor, для управления этим списком.
