@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\Pryaniky.OrleansHost.csproj": {}
+    "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\Pryaniky.OrleansHost.csproj": {}
   },
   "projects": {
-    "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj": {
+    "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj",
+        "projectUniqueName": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj",
         "projectName": "OneBoxDeployment.OrleansUtilities",
-        "projectPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj",
+        "projectPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj",
         "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
-        "outputPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\obj\\",
+        "outputPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\super\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,10 +26,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -40,10 +43,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Microsoft.Orleans.OrleansRuntime": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[3.6.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -62,24 +66,25 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-rc1-014190\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj": {
+    "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj",
+        "projectUniqueName": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj",
         "projectName": "Pryaniky.Orleans.GrainInterfaces",
-        "projectPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj",
+        "projectPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj",
         "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
-        "outputPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\obj\\",
+        "outputPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\super\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,10 +92,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -102,16 +109,17 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Microsoft.Orleans.CodeGenerator.MSBuild": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-beta1, )"
+              "version": "[3.6.0, )"
             },
             "Microsoft.Orleans.Core.Abstractions": {
               "target": "Package",
-              "version": "[3.0.0-beta1, )"
+              "version": "[3.6.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -130,38 +138,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-rc1-014190\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj": {
+    "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj",
+        "projectUniqueName": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj",
         "projectName": "Pryaniky.Orleans.Grains",
-        "projectPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj",
+        "projectPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj",
         "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
-        "outputPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\obj\\",
+        "outputPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\super\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj": {
-                "projectPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj"
+              "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj": {
+                "projectPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj"
               }
             }
           }
@@ -173,125 +184,14 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.Orleans.CodeGenerator.MSBuild": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-beta1, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-rc1-014190\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\Pryaniky.OrleansHost.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\Pryaniky.OrleansHost.csproj",
-        "projectName": "Pryaniky.OrleansHost",
-        "projectPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\Pryaniky.OrleansHost.csproj",
-        "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
-        "outputPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\super\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.0": {
-            "projectReferences": {
-              "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj": {
-                "projectPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj"
-              },
-              "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj": {
-                "projectPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj"
-              },
-              "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj": {
-                "projectPath": "C:\\Orleans\\Boilerplate\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.0": {
-          "dependencies": {
-            "Microsoft.Extensions.Configuration.Json": {
-              "target": "Package",
-              "version": "[3.0.0-rc1.19456.10, )"
-            },
-            "Microsoft.Extensions.Logging.Console": {
-              "target": "Package",
-              "version": "[3.0.0-rc1.19456.10, )"
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[3.0.0-rc1.19456.10, )"
-            },
-            "Microsoft.Orleans.Clustering.AdoNet": {
-              "target": "Package",
-              "version": "[3.0.0-beta1, )"
-            },
-            "Microsoft.Orleans.Core": {
-              "target": "Package",
-              "version": "[3.0.0-beta1, )"
-            },
-            "Microsoft.Orleans.Hosting.AzureCloudServices": {
-              "target": "Package",
-              "version": "[3.0.0-beta1, )"
-            },
-            "Microsoft.Orleans.OrleansRuntime": {
-              "target": "Package",
-              "version": "[3.0.0-beta1, )"
-            },
-            "Microsoft.Orleans.OrleansTelemetryConsumers.Counters": {
-              "target": "Package",
-              "version": "[3.0.0-beta1, )"
-            },
-            "Microsoft.Orleans.Persistence.AdoNet": {
-              "target": "Package",
-              "version": "[3.0.0-beta1, )"
-            },
-            "Microsoft.Orleans.Reminders.AdoNet": {
-              "target": "Package",
-              "version": "[3.0.0-beta1, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.7.0-rc1.19456.4, )"
+              "version": "[3.6.0, )"
             }
           },
           "imports": [
@@ -309,7 +209,122 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-rc1-014190\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\Pryaniky.OrleansHost.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\Pryaniky.OrleansHost.csproj",
+        "projectName": "Pryaniky.OrleansHost",
+        "projectPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\Pryaniky.OrleansHost.csproj",
+        "packagesPath": "C:\\Users\\super\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.OrleansHost\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\super\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj": {
+                "projectPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\OneBoxDeployment.OrleansUtilities\\OneBoxDeployment.OrleansUtilities.csproj"
+              },
+              "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj": {
+                "projectPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.GrainInterfaces\\Pryaniky.Orleans.GrainInterfaces.csproj"
+              },
+              "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj": {
+                "projectPath": "C:\\Projects\\Experiments\\OrleansLabs\\OrleansLabBoilerplate_1\\Pryaniky.Orleans.Grains\\Pryaniky.Orleans.Grains.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Orleans.Clustering.AdoNet": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.Orleans.Core": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.Orleans.Hosting.AzureCloudServices": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.Orleans.OrleansRuntime": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.Orleans.OrleansTelemetryConsumers.Counters": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.Orleans.Persistence.AdoNet": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.Orleans.Reminders.AdoNet": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

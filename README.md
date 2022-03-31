@@ -1,8 +1,9 @@
+Обновленно до версии Orleas 3.6  и .NET 6
 #Lab1. Практическая работа по основам Microsopft Orleans
 
 Что нужно для подготовки:
-1. Visual Studio 2019 Preview 4 - бесплатный вариант (https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview)
-2. .NET Core 3.0 RC1 (https://dotnet.microsoft.com/download/dotnet-core/3.0)
+1. Visual Studio 2022 - бесплатный вариант (https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview)
+2. .NET 6.0 
 3. Установить шаблоны Blazor для Visual Studio 2019:
 dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview9.19457.4
 

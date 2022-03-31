@@ -1,0 +1,17 @@
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\bin\Debug\net6.0\Pryaniky.Orleans.Grains.deps.json
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\bin\Debug\net6.0\Pryaniky.Orleans.Grains.dll
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\bin\Debug\net6.0\Pryaniky.Orleans.Grains.pdb
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\bin\Debug\net6.0\Pryaniky.Orleans.GrainInterfaces.dll
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\bin\Debug\net6.0\Pryaniky.Orleans.GrainInterfaces.pdb
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.csproj.AssemblyReference.cache
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.orleans.g.args.txt
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.orleans.g.cs
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.AssemblyInfoInputs.cache
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.AssemblyInfo.cs
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.csproj.CoreCompileInputs.cache
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.csproj.CopyComplete
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.dll
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\refint\Pryaniky.Orleans.Grains.dll
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\Pryaniky.Orleans.Grains.pdb
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.Grains\obj\Debug\net6.0\ref\Pryaniky.Orleans.Grains.dll

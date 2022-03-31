@@ -7,3 +7,15 @@ C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\ob
 C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.orleans.g.cs
 C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.dll
 C:\Orleans\Boilerplate\OrleansLabBoilerplate\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.pdb
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\bin\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.deps.json
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\bin\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.dll
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\bin\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.pdb
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.csproj.AssemblyReference.cache
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.orleans.g.args.txt
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.orleans.g.cs
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.AssemblyInfoInputs.cache
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.AssemblyInfo.cs
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.csproj.CoreCompileInputs.cache
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.dll
+C:\Projects\Experiments\OrleansLabs\OrleansLabBoilerplate_1\Pryaniky.Orleans.GrainInterfaces\obj\Debug\netstandard2.0\Pryaniky.Orleans.GrainInterfaces.pdb

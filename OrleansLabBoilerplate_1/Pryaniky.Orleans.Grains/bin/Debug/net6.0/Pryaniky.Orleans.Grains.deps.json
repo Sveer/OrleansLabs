@@ -1,0 +1,83 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Pryaniky.Orleans.Grains/1.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.CodeGenerator.MSBuild": "3.6.0",
+          "Pryaniky.Orleans.GrainInterfaces": "1.0.0"
+        },
+        "runtime": {
+          "Pryaniky.Orleans.Grains.dll": {}
+        }
+      },
+      "Microsoft.Orleans.CodeGenerator.MSBuild/3.6.0": {},
+      "Microsoft.Orleans.Core.Abstractions/3.6.0": {
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {},
+      "System.Threading.Tasks.Extensions/4.5.4": {},
+      "Pryaniky.Orleans.GrainInterfaces/1.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Core.Abstractions": "3.6.0"
+        },
+        "runtime": {
+          "Pryaniky.Orleans.GrainInterfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pryaniky.Orleans.Grains/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Orleans.CodeGenerator.MSBuild/3.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LwIJV5Z/Q/K7xYIvEKdRmbfPylfZPCKPBnPWNI6kCtMXEQFh6asXgxBIAMqdmAcoTXrDJoTnw1csO94y+oi1wQ==",
+      "path": "microsoft.orleans.codegenerator.msbuild/3.6.0",
+      "hashPath": "microsoft.orleans.codegenerator.msbuild.3.6.0.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Core.Abstractions/3.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JSOmWwiGctJzymin4c95Ccc0keVRudirW40SKm6Kc/ftc1TQyM/QFHc6DIjwayWcRbAnLH3/bN7JN5NXuBaYEA==",
+      "path": "microsoft.orleans.core.abstractions/3.6.0",
+      "hashPath": "microsoft.orleans.core.abstractions.3.6.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "Pryaniky.Orleans.GrainInterfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
