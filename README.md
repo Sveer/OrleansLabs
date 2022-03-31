@@ -2,10 +2,10 @@
 #Lab1. Практическая работа по основам Microsopft Orleans
 
 Что нужно для подготовки:
-1. Visual Studio 2022 - бесплатный вариант (https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview)
+1. Visual Studio 2022 - бесплатный вариант (https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes-preview)
 2. .NET 6.0 
-3. Установить шаблоны Blazor для Visual Studio 2019:
-dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview9.19457.4
+3. Установить шаблоны Blazor для Visual Studio 2022:
+dotnet new -i Microsoft.AspNetCore.Blazor.Templates
 
 4. http://github.com/sveer/
 
@@ -35,7 +35,7 @@ public static ISiloHost BuildOrleansHost(string[] args)
 ```
 
 Будем брать настройки из файла конфигурации
-Для этого полдключим проект OneBoxDeployment.OrleansUtilities из классного примера использования Orleans (Только обновим до .NET Core 3.0). В класс десериализуем основные настройки Orleans:
+Для этого подключим проект OneBoxDeployment.OrleansUtilities из классного примера использования Orleans (Только обновим до .NET 6.0). В класс десериализуем основные настройки Orleans:
 * ClusterOptions - Настройки кластера (идентифкаторы кластера и сервиса)
 * EndpointOptions - сетевые настройки
 * ConnectionConfig - строка соединения к БД для хранения информации о членстве silo в кластере
@@ -437,7 +437,7 @@ services.AddClusterService();
 * Swashbuckle.AspNetCore.Swagger
 * Swashbuckle.AspNetCore.SwaggerGen
 * Swashbuckle.AspNetCore.SwaggerUI
-P.S. Общий пакет Swashbuckle.AspNetCore.SwaggerUI пока не совместим с ASP.NET CORE 3.0 RC1.
+P.S. Общий пакет Swashbuckle.AspNetCore.SwaggerUI пока не совместим с ASP.NET 6.0.
 
 Пример на Blazor позволяет запустить простое приложение, в котором есть функционал отображения прогноза погоды и счетчика.
 Давайте перенесем прогноз погоды в Orleans, а также сделаем его реальным :)
